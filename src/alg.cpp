@@ -31,7 +31,7 @@ return a;
 }
 
 double sinn(double x, uint16_t count) {
-uint16_t a = 0.0;
+double a = 0.0;
 for (uint16_t i = 0; i <= count; i++) {
 a += pown(-1, i - 1) * calcItem(x, 2 * i - 1);
 }
