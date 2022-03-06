@@ -5,14 +5,14 @@
 
 double pown(double value, uint16_t n) {
 double a = 1;
-for(n; n>0; n--) {
-a=a*value;
+for(n; n > 0; n--) {
+a = a * value;
 }
 return a;
 }
 
 uint64_t fact(uint16_t n) {
-if(n==0)
+if(n == 0)
 return 1;
 return fact(n - 1) * n;
 }
@@ -31,7 +31,7 @@ return a;
 
 double sinn(double x, uint16_t count) {
 uint16_t a = 0;
-for (uint16_t i=1; i<=count; i++) {
+for (uint16_t i = 1; i <= count; i++) {
 a += pown(-1, i - 1) * calcItem(x, 2 * i - 1);
 }
 return a;
@@ -40,7 +40,7 @@ return a;
 double cosn(double x, uint16_t count) {
 double a = 0;
 for (uint16_t i = 0; i < count; i++) {
-	a += pown(-1, i - 1) * calcItem(x, 2*i-2);
+a += pown(-1, i - 1) * calcItem(x, 2 * i - 2);
 }
 return a;
 }
