@@ -40,7 +40,7 @@ return a;
 
 double cosn(double x, uint16_t count) {
 double a = 0.0;
-for (uint16_t i = 1; i < count; i++) {
+for (uint16_t i = 1; i <= count; i++) {
 a += pown(-1, i - 1) * calcItem(x, 2 * i - 2);
 }
 return a;
