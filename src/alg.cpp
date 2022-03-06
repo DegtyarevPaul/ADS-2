@@ -11,7 +11,7 @@ a=a*value;
 return a;
 }
 
-uint16_t fact(uint16_t n) {
+uint64_t fact(uint16_t n) {
 if(n==0)
 return 1;
 return fact(n - 1) * n;
