@@ -5,14 +5,14 @@
 
 double pown(double value, uint16_t n) {
   double a = 1.0;
-  for(n; n > 0; n--) {
+  for (n; n > 0; n--) {
     a = a * value;
   }
   return a;
 }
 
 uint64_t fact(uint16_t n) {
-  if(n == 0)
+  if (n == 0)
     return 1;
   else
     return fact(n - 1) * n;
